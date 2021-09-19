@@ -79,34 +79,34 @@ pub fn process_keyboard_data(raw_data: &RAWKEYBOARD, id: usize) -> Vec<RawEvent>
         key_opt = Some(KeyId::RightAlt);
     }
     if key == 0x30 {
-        key_opt = Some(KeyId::Zero);
+        key_opt = Some(KeyId::Num0);
     }
     if key == 0x31 {
-        key_opt = Some(KeyId::One);
+        key_opt = Some(KeyId::Num1);
     }
     if key == 0x32 {
-        key_opt = Some(KeyId::Two);
+        key_opt = Some(KeyId::Num2);
     }
     if key == 0x33 {
-        key_opt = Some(KeyId::Three);
+        key_opt = Some(KeyId::Num3);
     }
     if key == 0x34 {
-        key_opt = Some(KeyId::Four);
+        key_opt = Some(KeyId::Num4);
     }
     if key == 0x35 {
-        key_opt = Some(KeyId::Five);
+        key_opt = Some(KeyId::Num5);
     }
     if key == 0x36 {
-        key_opt = Some(KeyId::Six);
+        key_opt = Some(KeyId::Num6);
     }
     if key == 0x37 {
-        key_opt = Some(KeyId::Seven);
+        key_opt = Some(KeyId::Num7);
     }
     if key == 0x38 {
-        key_opt = Some(KeyId::Eight);
+        key_opt = Some(KeyId::Num8);
     }
     if key == 0x39 {
-        key_opt = Some(KeyId::Nine);
+        key_opt = Some(KeyId::Num9);
     }
     if key == 0x41 {
         key_opt = Some(KeyId::A);
@@ -185,6 +185,36 @@ pub fn process_keyboard_data(raw_data: &RAWKEYBOARD, id: usize) -> Vec<RawEvent>
     }
     if key == 0x5A {
         key_opt = Some(KeyId::Z);
+    }
+    if key == VK_NUMPAD0 {
+        key_opt = Some(KeyId::NumPad0);
+    }
+    if key == VK_NUMPAD1 {
+        key_opt = Some(KeyId::NumPad1);
+    }
+    if key == VK_NUMPAD2 {
+        key_opt = Some(KeyId::NumPad2);
+    }
+    if key == VK_NUMPAD3 {
+        key_opt = Some(KeyId::NumPad3);
+    }
+    if key == VK_NUMPAD4 {
+        key_opt = Some(KeyId::NumPad4);
+    }
+    if key == VK_NUMPAD5 {
+        key_opt = Some(KeyId::NumPad5);
+    }
+    if key == VK_NUMPAD6 {
+        key_opt = Some(KeyId::NumPad6);
+    }
+    if key == VK_NUMPAD7 {
+        key_opt = Some(KeyId::NumPad7);
+    }
+    if key == VK_NUMPAD8 {
+        key_opt = Some(KeyId::NumPad8);
+    }
+    if key == VK_NUMPAD9 {
+        key_opt = Some(KeyId::NumPad9);
     }
     if key == VK_CAPITAL {
         key_opt = Some(KeyId::CapsLock);
